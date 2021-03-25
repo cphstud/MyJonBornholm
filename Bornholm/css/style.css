@@ -1,0 +1,35 @@
+h2 {
+    font-family: ChaletComprime,Arial;
+    color: darkblue;
+    background: beige;
+}
+header {
+    background-color: #00ffd4;
+    margin-left: auto;
+    margin-right: auto;
+}
+img {
+    float: left;
+    border: 15px ;
+    padding: 10px;
+    margin: 10px;
+}
+
+label {
+    float: left;
+}
+
+input {
+    padding: 1px;
+    margin: 4px;
+    border-bottom-width: thin;
+}
+
+.myhobby {
+    font-family: Arial;
+    background-color:beige;
+    left: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px;
+}

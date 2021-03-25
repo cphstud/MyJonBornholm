@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bornholm</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="myhobby container">
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mm">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mm">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="dr.dk">DR</a> </li>
+                <li class="nav-item"><a class="nav-link" href="tv2.dk">TV2</a> </li>
+                <li class="nav-item"><a class="nav-link" href="tv3.dk">TV3</a> </li>
+            </ul>
+        </div>
+    </div>
+    <h1> Bornholm car pooling</h1>
+
+    <form action="cgi-bin/runEnv.sh" method="get">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label>Afgang:</label>
+                        <select name="start" class="form-control">
+                            <option  value="ronne">Rønne</option>
+                            <option  value="allinge">Allinge</option>
+                            <option  value="nexo">Nexøe</option>
+                        </select>
+                        </label>
+                        <label>Destination:</label>
+                        <select name="destsel" class="form-control">
+                            <option  value="ronne">Rønne</option>
+                            <option  value="allinge">Allinge</option>
+                            <option  value="nexo">Nexøe</option>
+                        </select></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Afgangstid</label>
+                        <input type="text" class="form-control" id="date" name="date" maxlength="16" placeholder="23-12-2021 14:00"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="border border-danger p-4">
+                <div class="row">
+                    <div class="col">
+                        <label>Fornavn</label>
+                        <input class="form-control" type="text" id="afg", name="afg"  />
+                    </div>
+                    <div class="col">
+                        <label>Efternavn</label>
+                        <input class="form-control" type="text" id="dest", name="dest" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group w-50">
+                <label>Din favorit hobby</label>
+                <input class="form-control" type="text" id="hobby" name="hobby" maxlength="50" />
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col">
+                    <div class="form-check form-check-inline ">
+                        <input type="radio" value="M" name="gender" id="m">
+                        <label class="form-check-label" for="m">Mand</label>
+                        <input type="radio" value="F" name="gender" id="k">
+                        <label class="form-check-label" for="k">Kvinde</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check form-check-inline ">
+                        <input class="form-check-input" type="checkbox" value="mus" name="mus" id="mus">
+                        <label class="form-check-label" for="mus">Musik</label>
+                        <input class="form-check-input" type="checkbox" value="smoke" name="røg" id="ryg">
+                        <label class="form-check-label" for="ryg">Ryger</label>
+                        <input class="form-check-input" type="checkbox" value="dyr" name="dyr" id="dyr">
+                        <label class="form-check-label" for="dyr">Dyr</label>
+                        <input class="form-check-input" type="checkbox" value="talk" name="talk" id="talk">
+                        <label class="form-check-label" for="talk">Snakker</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Indsend</button>
+        </div>
+    </form>
+</div>
+</div>
+
+<footer>
+    <a href="#">Home</a><a href="#">About</a><a href="#">Projects</a><a href="#">Contact</a>
+</footer>
+<script src="js/util.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
